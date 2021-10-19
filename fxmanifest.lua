@@ -1,31 +1,15 @@
 fx_version 'cerulean'
-game 'common'
+game 'gta5'
 
 description 'QB-Menu'
 version '0.0.1'
 
+client_script 'client/main.lua'
+
 ui_page 'html/index.html'
 
-shared_script {
-    'config.lua'
-}
-
-client_scripts {
-    '@PolyZone/client.lua',
-	'@PolyZone/BoxZone.lua',
-	'@PolyZone/EntityZone.lua',
-	'@PolyZone/CircleZone.lua',
-	'@PolyZone/ComboZone.lua',
-    'client/*.lua'
-}
-
 files {
-    'html/*.html',
-    'html/js/*.js',
-    'html/css/*.css'
-}
-
-dependencies {
-    'PolyZone',
-    'qb-core'
+    'html/index.html',
+    'html/script.js',
+    'html/style.css'
 }
